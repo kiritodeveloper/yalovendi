@@ -4,7 +4,7 @@
             <div class="navbar-header">
                 <a href="{{ url('/home') }}"
                    class="navbar-brand">
-                    Larance
+                   Ya Lo Vendi
                 </a>
             </div>
             

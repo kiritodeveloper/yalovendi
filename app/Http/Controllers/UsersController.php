@@ -37,7 +37,7 @@ class UsersController extends Controller
     public function create()
     {
         $relations = [
-            'roles' => \App\Role::get()->pluck('title', 'id')->prepend('Please select', ''),
+            'roles' => \App\Role::get()->pluck('title', 'id')->prepend('Seleccione', ''),
         ];
 
         return view('users.create', $relations);

@@ -21,7 +21,6 @@ $this->post('password/reset', 'Auth\ResetPasswordController@reset')->name('auth.
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/home', 'HomeController@index');
-
     Route::resource('roles', 'RolesController');
     Route::post('roles_mass_destroy', ['uses' => 'RolesController@massDestroy', 'as' => 'roles.mass_destroy']);
     Route::resource('users', 'UsersController');
@@ -36,12 +35,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('income_sources_mass_destroy', ['uses' => 'IncomeSourcesController@massDestroy', 'as' => 'income_sources.mass_destroy']);
     Route::resource('client_statuses', 'ClientStatusesController');
     Route::post('client_statuses_mass_destroy', ['uses' => 'ClientStatusesController@massDestroy', 'as' => 'client_statuses.mass_destroy']);
-    Route::resource('project_statuses', 'ProjectStatusesController');
-    Route::post('project_statuses_mass_destroy', ['uses' => 'ProjectStatusesController@massDestroy', 'as' => 'project_statuses.mass_destroy']);
-    Route::resource('clients', 'ClientsController');
-    Route::post('clients_mass_destroy', ['uses' => 'ClientsController@massDestroy', 'as' => 'clients.mass_destroy']);
-    Route::resource('projects', 'ProjectsController');
-    Route::post('projects_mass_destroy', ['uses' => 'ProjectsController@massDestroy', 'as' => 'projects.mass_destroy']);
+    Route::resource('ventas', 'VentasController');
+     Route::post('ventas_mass_destroy', ['uses' => 'VentasController@massDestroy', 'as' => 'ventas.mass_destroy']);
     Route::resource('notes', 'NotesController');
     Route::post('notes_mass_destroy', ['uses' => 'NotesController@massDestroy', 'as' => 'notes.mass_destroy']);
     Route::resource('documents', 'DocumentsController');

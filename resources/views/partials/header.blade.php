@@ -3,7 +3,7 @@
         <div class="navbar-header">
             <a href="{{ url('/') }}"
                class="navbar-brand">
-                Larancer
+               Ya Lo Vendi
             </a>
         </div>
         <a href="javascript:;"
@@ -14,9 +14,7 @@
 
         <div class="top-menu">
             <ul class="nav navbar-nav pull-right">
-                <li>
-                    <a href="https://quickadminpanel.com" target="_blank">Powered by QuickAdmin</a>
-                </li>
+                
             </ul>
         </div>
     </div>
